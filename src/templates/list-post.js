@@ -38,24 +38,24 @@ export const ListPostTemplate = ({
                     className={`blog-list-item tile is-child box notification`}
                   >
                     <header>
-                      {item.frontmatter.featuredimage ? (
+                      {item.image ? (
                         <div className="featured-thumbnail">
                           <PreviewCompatibleImage
                             imageInfo={{
-                              image: item.frontmatter.image,
-                              alt: `featured image thumbnail for item ${item.frontmatter.itemname}`,
+                              image: item.image,
+                              alt: `featured image thumbnail for item ${item.itemname}`,
                               width:
-                                item.frontmatter.image.childImageSharp
+                                item.image.childImageSharp
                                   .gatsbyImageData.width,
                               height:
-                                item.frontmatter.image.childImageSharp
+                                item.image.childImageSharp
                                   .gatsbyImageData.height,
                             }}
                           />
                         </div>
                       ) : null}
                       <p className="post-meta">
-                          {item.frontmatter.itemname}
+                          {item.itemname}
                       </p>
                     </header>
                     <p>
