@@ -24,4 +24,20 @@ listitems:
       will reduce core heat loss to keep you warm. Most insulated jackets pack
       down pretty small within its own pocket or small stuff sack, so these are
       easy for traveling!
+  - itemname: Fleece Jacket or Wool Sweater
+    description: Depending on the weather, layering a
+      [fleece](https://www.backcountry.com/patagonia-better-sweater-fleece-jacket-mens?skid=PAT02Y3-DARBORGRE-M)
+      [jacket](https://www.backcountry.com/columbia-benton-springs-full-zip-fleece-jacket-womens)
+      adds extra warmth. You could also save room in your suitcase and buy a
+      traditional Icelandic wool sweater during your trip!
+  - itemname: Windproof pants
+    description: You’ll want to protect your legs from the weather as well. Jeans
+      take a long time to dry when they get wet, so we recommend
+      [wind](https://www.backcountry.com/mountain-hardwear-acadia-pant-mens) or
+      [waterproof](https://www.amazon.com/BALEAF-Womens-Waterproof-Weather-Insulated/dp/B07JDLSRL6/ref=sr_1_28?crid=2UORQHZCT00OG&keywords=womens+winter+pants&qid=1643227183&sprefix=womens+winter+pants%2Caps%2C69&sr=8-28)
+      pants as a top layer.
+    image: https://m.media-amazon.com/images/I/31vBaPQTbWL.SL100.jpg
+tags:
+  - outdoor
+  - cold
 ---
