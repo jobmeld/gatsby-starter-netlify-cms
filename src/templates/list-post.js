@@ -33,7 +33,7 @@ export const ListPostTemplate = ({
             <div className="columns is-multiline">
             {listitems &&
               listitems.map(({ node: item }) => (
-                <div className="is-parent column is-6" key={item.id}>
+                <div className="is-parent column is-6">
                   <article
                     className={`blog-list-item tile is-child box notification`}
                   >
