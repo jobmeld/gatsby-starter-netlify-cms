@@ -41,20 +41,20 @@ export const ListPostTemplate = ({
                         <div className="featured-thumbnail">
                           <PreviewCompatibleImage
                             imageInfo={{
-                              image: item.frontmatter.featuredimage,
-                              alt: `featured image thumbnail for item ${item.frontmatter.title}`,
+                              image: item.frontmatter.image,
+                              alt: `featured image thumbnail for item ${item.frontmatter.itemname}`,
                               width:
-                                item.frontmatter.featuredimage.childImageSharp
+                                item.frontmatter.image.childImageSharp
                                   .gatsbyImageData.width,
                               height:
-                                item.frontmatter.featuredimage.childImageSharp
+                                item.frontmatter.image.childImageSharp
                                   .gatsbyImageData.height,
                             }}
                           />
                         </div>
                       ) : null}
                       <p className="post-meta">
-                          {item.frontmatter.title}
+                          {item.frontmatter.itemname}
                       </p>
                     </header>
                     <p>
@@ -135,7 +135,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        listitems
+        listitems {
+          itemname
+          image
+          description
+        }
         tags
       }
     }
