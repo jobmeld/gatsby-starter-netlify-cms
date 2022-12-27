@@ -28,6 +28,43 @@ export const ListPostTemplate = ({
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
+            
+            <div className="columns is-multiline">
+            {listitems &&
+              listitems.map(({ node: item }) => (
+                <div className="is-parent column is-6" key={item.id}>
+                  <article
+                    className={`blog-list-item tile is-child box notification`}
+                  >
+                    <header>
+                      {item.frontmatter.featuredimage ? (
+                        <div className="featured-thumbnail">
+                          <PreviewCompatibleImage
+                            imageInfo={{
+                              image: item.frontmatter.featuredimage,
+                              alt: `featured image thumbnail for item ${item.frontmatter.title}`,
+                              width:
+                                item.frontmatter.featuredimage.childImageSharp
+                                  .gatsbyImageData.width,
+                              height:
+                                item.frontmatter.featuredimage.childImageSharp
+                                  .gatsbyImageData.height,
+                            }}
+                          />
+                        </div>
+                      ) : null}
+                      <p className="post-meta">
+                          {item.frontmatter.title}
+                      </p>
+                    </header>
+                    <p>
+                      {item.description}
+                    </p>
+                  </article>
+                </div>
+              ))}
+          </div>
+            
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -65,7 +102,7 @@ const ListPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Travel List">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -73,6 +110,7 @@ const ListPost = ({ data }) => {
             />
           </Helmet>
         }
+        listitems={post.frontmatter.listitems}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -97,6 +135,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        listitems
         tags
       }
     }
