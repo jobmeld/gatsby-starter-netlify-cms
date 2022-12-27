@@ -1,7 +1,8 @@
 ---
 templateKey: list-post
-title: Iceland in winter
+title: Iceland in Winter
 date: 2022-12-27T21:57:13.707Z
+featuredimage: /img/img_3847.jpeg
 description: "Iceland has become a really popular travel destination, and it has
   its perks for visiting in each season. If you’re planning to visit in winter,
   the key to staying warm and comfortable is layers! "
