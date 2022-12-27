@@ -11,6 +11,7 @@ export const ListPostTemplate = ({
   content,
   contentComponent,
   description,
+  listitems,
   tags,
   title,
   helmet,
