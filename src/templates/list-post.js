@@ -42,6 +42,12 @@ export const ListPostTemplate = ({
                     <header>
                       {item.image ? (
                         <div className="featured-thumbnail">
+                          <PreviewCompatibleImage
+                            imageInfo={{
+                              image: item.image,
+                              alt: `featured image thumbnail for item ${item.itemname}`,
+                            }}
+                          />
                         </div>
                       ) : null}
                       <p className="post-meta">
@@ -129,11 +135,7 @@ export const pageQuery = graphql`
         description
         listitems {
           itemname
-          image {
-            childImageSharp {
-              gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-            }
-          }
+          image
           description
         }
         tags
