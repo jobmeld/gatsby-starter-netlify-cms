@@ -42,18 +42,6 @@ export const ListPostTemplate = ({
                     <header>
                       {item.image ? (
                         <div className="featured-thumbnail">
-                          <PreviewCompatibleImage
-                            imageInfo={{
-                              image: item.image,
-                              alt: `featured image thumbnail for item ${item.itemname}`,
-                              width:
-                                item.image.childImageSharp
-                                  .gatsbyImageData.width,
-                              height:
-                                item.image.childImageSharp
-                                  .gatsbyImageData.height,
-                            }}
-                          />
                         </div>
                       ) : null}
                       <p className="post-meta">
