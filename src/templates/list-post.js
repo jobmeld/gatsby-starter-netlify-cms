@@ -93,7 +93,6 @@ ListPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  listitems: PropTypes.array,
   listitems: PropTypes.shape({
     itemname: PropTypes.string,
     description: PropTypes.string,
