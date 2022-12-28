@@ -32,7 +32,7 @@ export const ListPostTemplate = ({
             
             <div className="columns is-multiline">
             {listitems &&
-              listitems.map(({ node: item }) => (
+              listitems.map((item) => (
                 <div className="is-parent column is-6">
                   <article
                     className={`blog-list-item tile is-child box notification`}
@@ -92,6 +92,11 @@ ListPostTemplate.propTypes = {
   title: PropTypes.string,
   helmet: PropTypes.object,
   listitems: PropTypes.array,
+  listitems: PropTypes.shape({
+    itemname: PropTypes.string,
+    description: PropTypes.string,
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
 };
 
 const ListPost = ({ data }) => {
