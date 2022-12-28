@@ -91,6 +91,7 @@ ListPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  listitems: PropTypes.array,
 };
 
 const ListPost = ({ data }) => {
