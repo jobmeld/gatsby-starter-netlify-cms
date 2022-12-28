@@ -146,7 +146,11 @@ export const pageQuery = graphql`
         description
         listitems {
           itemname
-          image
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
+            }
+          }
           description
         }
         tags
