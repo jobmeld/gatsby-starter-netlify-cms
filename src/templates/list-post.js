@@ -108,7 +108,7 @@ const ListPost = ({ data }) => {
             />
           </Helmet>
         }
-        listitems={post.html.listitems}
+        listitems={post.listitems}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
