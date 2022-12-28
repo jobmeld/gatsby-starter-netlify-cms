@@ -93,11 +93,7 @@ ListPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  listitems: PropTypes.shape({
-    itemname: PropTypes.string,
-    description: PropTypes.string,
-    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  }),
+  listitems: PropTypes.array,
 };
 
 const ListPost = ({ data }) => {
