@@ -128,19 +128,19 @@ export const pageQuery = graphql`
   query ListPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
-      html
+      html {
         listitems {
           itemname
           image
           description
-        }      
+        }  
+      }    
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
         description
         tags
       }
-
     }
   }
 `;
