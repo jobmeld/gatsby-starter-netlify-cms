@@ -54,7 +54,7 @@ export const ListPostTemplate = ({
                           {item.itemname}
                       </h3>
                     </header>
-                    <div dangerouslySetInnerHTML={{ __html: html}} />
+                    <div dangerouslySetInnerHTML={{ __html: item.description}} />
                   </article>
                 </div>
               ))}
@@ -86,6 +86,11 @@ ListPostTemplate.propTypes = {
   title: PropTypes.string,
   helmet: PropTypes.object,
   listitems: PropTypes.array,
+  listitems: PropTypes.shape({
+    itemname: PropTypes.string,
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    description: PropTypes.string,
+  }),
 };
 
 const ListPost = ({ data }) => {
