@@ -54,7 +54,7 @@ export const ListPostTemplate = ({
                           {item.itemname}
                       </h3>
                     </header>
-                    <ReactMarkdown>{item.description}</ReactMarkdown>
+                    <PostContent content={item.description.html} />
                   </article>
                 </div>
               ))}
@@ -98,7 +98,6 @@ const ListPost = ({ data }) => {
   return (
     <Layout>
       <ListPostTemplate
-        content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
@@ -106,7 +105,7 @@ const ListPost = ({ data }) => {
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
-              content={`${post.frontmatter.description}`}
+              content={`${post.frontmatter.description.html}`}
             />
           </Helmet>
         }
@@ -130,7 +129,6 @@ export const pageQuery = graphql`
   query ListPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
-      html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
@@ -139,6 +137,7 @@ export const pageQuery = graphql`
           itemname
           image
           description
+            html
         }
         tags
       }
