@@ -88,7 +88,7 @@ ListPostTemplate.propTypes = {
   listitems: PropTypes.shape({
     itemname: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    description: PropTypes.object,
+    description: PropTypes.node,
   }),
 };
 
