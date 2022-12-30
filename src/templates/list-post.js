@@ -54,7 +54,7 @@ export const ListPostTemplate = ({
                           {item.itemname}
                       </h3>
                     </header>
-                    <PostContent content={item.description} />
+                    <ReactMarkdown>{item.description}</ReactMarkdown>
                   </article>
                 </div>
               ))}
