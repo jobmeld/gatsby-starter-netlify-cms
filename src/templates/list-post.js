@@ -108,7 +108,7 @@ const ListPost = ({ data }) => {
             />
           </Helmet>
         }
-        listitems={post.frontmatter.listitems}
+        listitems={post.listitems}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -133,12 +133,12 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        listitems {
-          itemname
-          image
-          description
-        }
         tags
+      }
+      listitems {
+        itemname
+        image
+        description
       }
     }
   }
