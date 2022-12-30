@@ -108,7 +108,7 @@ const ListPost = ({ data }) => {
             />
           </Helmet>
         }
-        listitems={post.html.listitems}
+        listitems={post.frontmatter.listitems}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -128,16 +128,16 @@ export const pageQuery = graphql`
   query ListPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
-      html        
+      html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
+        description
         listitems {
           itemname
           image
           description
         }
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-        description
         tags
       }
     }
