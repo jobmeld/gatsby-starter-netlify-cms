@@ -50,12 +50,12 @@ export const ListPostTemplate = ({
                           />
                         </div>
                       ) : null}
-                      <p className="post-meta">
+                      <h3>
                           {item.itemname}
-                      </p>
+                      </h3>
                     </header>
                     <p>
-                      {item.description}
+                    <PostContent content={item.description} />
                     </p>
                   </article>
                 </div>
