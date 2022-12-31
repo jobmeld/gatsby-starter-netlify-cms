@@ -40,21 +40,32 @@ export const ListPostTemplate = ({
                     className={`blog-list-item tile is-child box notification`}
                   >
                     <header>
-                      {item.image ? (
-                        <div className="featured-thumbnail">
-                          <PreviewCompatibleImage
-                            imageInfo={{
-                              image: item.image,
-                              alt: `featured image thumbnail for item ${item.itemname}`,
-                            }}
-                          />
-                        </div>
+
+                    {item.link ? (
+                      <Link to={item.link}>
+                    ) : null}
+
+                    {item.image ? (
+                      <div className="featured-thumbnail">
+                        <PreviewCompatibleImage
+                          imageInfo={{
+                            image: item.image,
+                            alt: `featured image thumbnail for item ${item.itemname}`,
+                          }}
+                        />
+                      </div>
+                      ) : null}  
+
+                      {item.link ? ( 
+                        </Link>  
                       ) : null}
+                    
                       <h3>
                           {item.itemname}
                       </h3>
                     </header>
                     <PostContent content={item.description} />
+                    <div dangerouslySetInnerHTML={{ __html: item.description}} />
                   </article>
                 </div>
               ))}
@@ -87,6 +98,7 @@ ListPostTemplate.propTypes = {
   helmet: PropTypes.object,
   listitems: PropTypes.shape({
     itemname: PropTypes.string,
+    link: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     description: PropTypes.object,
   }),
@@ -110,7 +122,7 @@ const ListPost = ({ data }) => {
             />
           </Helmet>
         }
-        listitems={post.children.listitems}
+        listitems={post.frontmatter.listitems}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -131,17 +143,16 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
-      children {
-        listitems {
-          itemname
-          image
-          description
-        }
-      }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        listitems {
+          itemname
+          image
+          description
+          link
+        }
         tags
       }
     }
