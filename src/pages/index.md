@@ -1,19 +1,18 @@
 ---
 templateKey: index-page
 title: Christine's Travel Lists
-image: /img/home-jumbotron.jpg
+image: /img/img_3544.jpg
 heading: Be prepared for your next travel destination
 subheading: with curated lists by Christine Voorhees
 mainpitch:
   title: Why Christine
   description: >
-    Christine is an outdoor & luxury traveler.
-    She has been to all 50 states 15 Countries and counting.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+    Christine is an outdoor & luxury traveler. She has been to all 50 states 15
+    Countries and counting.
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
