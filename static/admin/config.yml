@@ -37,7 +37,8 @@ collections:
             [
               { label: Name, name: itemname, widget: string },
               { label: Image, name: image, widget: image, required: false },
-              { label: "Description", name: "description", widget: "markdown" }
+              { label: Referral Link, name: link, widget: string, required: false },
+              { label: "Description", name: "description", widget: "text" }
             ],
         }
       - { label: "Tags", name: "tags", widget: "list" }
