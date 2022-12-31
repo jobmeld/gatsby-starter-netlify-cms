@@ -65,7 +65,7 @@ export const ListPostTemplate = ({
                       </h3>
                     </header>
                     <PostContent content={item.description} />
-                    <div dangerouslySetInnerHTML={{ __html: item.description}} />
+                    <div dangerouslySetInnerHTML={{ __html: item.html}} />
                   </article>
                 </div>
               ))}
