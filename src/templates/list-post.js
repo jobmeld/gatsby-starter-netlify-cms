@@ -53,7 +53,9 @@ export const ListPostTemplate = ({
                       ) : null}  
 
                       <h3>
-                          {item.itemname}
+                      {item.link ? (
+                      <Link to={item.link}>{item.itemname}</Link>
+                      ) : item.itemname }  
                       </h3>
                     </header>
                     <PostContent content={item.description} />
@@ -105,6 +107,7 @@ const ListPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        link={post.frontmatter.link}
         helmet={
           <Helmet titleTemplate="%s | Travel List">
             <title>{`${post.frontmatter.title}`}</title>
@@ -143,6 +146,7 @@ export const pageQuery = graphql`
           itemname
           image
           description
+          link
         }
         tags
       }
