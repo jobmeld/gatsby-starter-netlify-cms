@@ -147,13 +147,14 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        featuredimage
+        featuredimage {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
         listitems {
           itemname
           image
-            childImageSharp {
-              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-            }
           description
           link
         }
