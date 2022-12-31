@@ -32,7 +32,7 @@ export const ListPostTemplate = ({
           {featuredimage ? (
           <FullWidthImage img={fullWidthImage} title={title} subheading= "Packing List" />
           ) : (<h1 class="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>) } 
-            <p>{description}</p>
+            <p style={{ marginTop: `4rem` }}>{description}</p>
             <PostContent content={content} />
             
             <div className="columns is-multiline">
@@ -43,6 +43,11 @@ export const ListPostTemplate = ({
                     className={`blog-list-item tile is-child box notification`}
                   >
                     <header>
+                      <h3>
+                      {item.link ? (
+                      <Link to={item.link}>{item.itemname}</Link>
+                      ) : item.itemname }  
+                      </h3>
 
                     {item.image ? (
                       <div className="featured-thumbnail">
@@ -54,12 +59,6 @@ export const ListPostTemplate = ({
                         />
                       </div>
                       ) : null}  
-
-                      <h3>
-                      {item.link ? (
-                      <Link to={item.link}>{item.itemname}</Link>
-                      ) : item.itemname }  
-                      </h3>
                     </header>
                     <PostContent content={item.description} />
                     <div dangerouslySetInnerHTML={{ __html: item.html}} />
