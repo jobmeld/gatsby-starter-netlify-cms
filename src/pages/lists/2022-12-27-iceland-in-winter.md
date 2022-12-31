@@ -51,6 +51,18 @@ listitems:
       won’t slip on snow or ice. If you buy new boots, make sure to break them
       in before your trip since you’ll be doing a lot of walking.
     link: https://www.amazon.com/Timberland-White-Ledge-Waterproof-Brown/dp/B000VX6Y2O/ref=sr_1_40?crid=1CE9UHB5X9IGT&keywords=mens+winter+hiking+boots&qid=1643402626&sprefix=mens+winter+hikin%2Caps%2C61&sr=8-40
+  - itemname: Warm hat, gloves, and scarf
+    link: https://www.amazon.com/Alepo-Womens-Winter-Beanie-Knitted/dp/B07Z1K5BNY/ref=sxin_14_slsr_d_i_fs4star_fa_2_B07Z1K5BNY?crid=36SHNEP19LZWF&cv_ct_cx=fleece+lined+hat+women&keywords=fleece+lined+hat+women&pd_rd_i=B07Z1K5BNY&pd_rd_r=1a5824a2-beab-4b1a-9524-418f01c17a9f&pd_rd_w=pZX95&pd_rd_wg=C1SuN&pf_rd_p=2fe4bff4-1e20-47c2-aa4f-e5a7101d11f9&pf_rd_r=VT8JEJMTS7BS67FDJWA0&psc=1&qid=1643403024&sprefix=fleece+lined+h%2Caps%2C64&sr=1-3-e34beff1-162a-4ed3-9956-05d0830a3cd7
+    description: You lose most of your body heat through your head and neck so keep
+      them covered with a warm hat and scarf. For gloves, we recommend
+      touchscreen compatibility since you’ll probably be taking lots of photos!
+  - itemname: Swimsuit
+    description: Yes, really! A fantastic way to stay warm in Iceland is in one of
+      the many geothermal hot springs.
+  - itemname: Tripod
+    description: One of the best reasons to visit Iceland in winter is to see the
+      northern lights. Bring a tripod to make sure you get some lovely clear
+      photos.
 tags:
   - outdoor
   - cold
