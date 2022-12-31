@@ -41,10 +41,6 @@ export const ListPostTemplate = ({
                   >
                     <header>
 
-                    {item.link ? (
-                      <Link to={item.link}>
-                    ) : null}
-
                     {item.image ? (
                       <div className="featured-thumbnail">
                         <PreviewCompatibleImage
@@ -56,10 +52,6 @@ export const ListPostTemplate = ({
                       </div>
                       ) : null}  
 
-                      {item.link ? ( 
-                        </Link>  
-                      ) : null}
-                    
                       <h3>
                           {item.itemname}
                       </h3>
