@@ -13,6 +13,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
         image={image.childImageSharp.gatsbyImageData}
         style={imageStyle}
         alt={alt}
+        objectPosition="top right"
       />
     );
   } else if (!!childImageSharp) {
@@ -21,6 +22,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
         image={childImageSharp.gatsbyImageData}
         style={imageStyle}
         alt={alt}
+        objectPosition="top right"
       />
     );
     // for Netlify CMS 
