@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 import ListRoll from "../components/ListRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
@@ -22,7 +21,7 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+      <FullWidthImage img={heroImage} title={heading} subheading={subheading} />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
