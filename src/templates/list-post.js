@@ -7,12 +7,14 @@ import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
 export const ListPostTemplate = ({
   content,
   contentComponent,
   description,
+  featuredimage,
   listitems,
   tags,
   title,
@@ -26,9 +28,7 @@ export const ListPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
+          <FullWidthImage img={featuredimage} title={title} />
             <p>{description}</p>
             <PostContent content={content} />
             
@@ -90,6 +90,7 @@ ListPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   listitems: PropTypes.shape({
     itemname: PropTypes.string,
     link: PropTypes.string,
@@ -107,6 +108,7 @@ const ListPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        featuredimage={post.frontmatter.featuredimage}
         link={post.frontmatter.link}
         helmet={
           <Helmet titleTemplate="%s | Travel List">
@@ -142,6 +144,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        featuredimage
         listitems {
           itemname
           image
