@@ -21,6 +21,7 @@ export const ListPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
+  const fullWidthImage = getImage(featuredimage) || featuredimage;
 
   return (
     <section className="section">
@@ -29,7 +30,7 @@ export const ListPostTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
           {featuredimage ? (
-          <FullWidthImage img={featuredimage} title={title} />
+          <FullWidthImage img={fullWidthImage} title={title} />
           ) : (<h1 class="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>) } 
             <p>{description}</p>
             <PostContent content={content} />
@@ -92,7 +93,7 @@ ListPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  featuredimage: PropTypes.string,
+  featuredimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   listitems: PropTypes.shape({
     itemname: PropTypes.string,
     link: PropTypes.string,
@@ -150,6 +151,9 @@ export const pageQuery = graphql`
         listitems {
           itemname
           image
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            }
           description
           link
         }
