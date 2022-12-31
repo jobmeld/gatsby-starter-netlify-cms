@@ -143,7 +143,6 @@ export const pageQuery = graphql`
           itemname
           image
           description
-          link
         }
         tags
       }
