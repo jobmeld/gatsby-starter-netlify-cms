@@ -38,7 +38,7 @@ export const IndexPageTemplate = ({
                     </div>
                     <ListRoll />
                     <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
+                      <Link className="btn" to="/lists">
                         Read more
                       </Link>
                     </div>
