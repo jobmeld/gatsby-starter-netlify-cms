@@ -2,7 +2,7 @@
 templateKey: list-post
 title: Iceland in Winter
 date: 2022-12-27T21:57:13.707Z
-featuredimage: /img/img_3847.jpeg
+featuredimage: /img/img_0379.jpg
 description: "Iceland has become a really popular travel destination, and it has
   its perks for visiting in each season. If you’re planning to visit in winter,
   the key to staying warm and comfortable is layers! "
@@ -46,16 +46,19 @@ listitems:
       longer to dry so avoid wearing cotton socks, wool will keep you way more
       comfortable!
     link: https://www.amazon.com/Darn-Tough-Merino-Cushion-Black/dp/B000XFZXYK/ref=sr_1_42?crid=1ML01QH0M8EW8&keywords=wool+socks&qid=1643402033&sprefix=wool+socks%2Caps%2C67&sr=8-42
+    image: https://m.media-amazon.com/images/I/51iYqM0OXYL.SL100.jpg
   - itemname: Waterproof boots
     description: We recommend hiking boots or snow boots with good tread so you
       won’t slip on snow or ice. If you buy new boots, make sure to break them
       in before your trip since you’ll be doing a lot of walking.
     link: https://www.amazon.com/Timberland-White-Ledge-Waterproof-Brown/dp/B000VX6Y2O/ref=sr_1_40?crid=1CE9UHB5X9IGT&keywords=mens+winter+hiking+boots&qid=1643402626&sprefix=mens+winter+hikin%2Caps%2C61&sr=8-40
+    image: https://m.media-amazon.com/images/I/41FGvesJjeL.SL100.jpg
   - itemname: Warm hat, gloves, and scarf
     link: https://www.amazon.com/Alepo-Womens-Winter-Beanie-Knitted/dp/B07Z1K5BNY/ref=sxin_14_slsr_d_i_fs4star_fa_2_B07Z1K5BNY?crid=36SHNEP19LZWF&cv_ct_cx=fleece+lined+hat+women&keywords=fleece+lined+hat+women&pd_rd_i=B07Z1K5BNY&pd_rd_r=1a5824a2-beab-4b1a-9524-418f01c17a9f&pd_rd_w=pZX95&pd_rd_wg=C1SuN&pf_rd_p=2fe4bff4-1e20-47c2-aa4f-e5a7101d11f9&pf_rd_r=VT8JEJMTS7BS67FDJWA0&psc=1&qid=1643403024&sprefix=fleece+lined+h%2Caps%2C64&sr=1-3-e34beff1-162a-4ed3-9956-05d0830a3cd7
     description: You lose most of your body heat through your head and neck so keep
       them covered with a warm hat and scarf. For gloves, we recommend
       touchscreen compatibility since you’ll probably be taking lots of photos!
+    image: https://m.media-amazon.com/images/I/51Cedu2AFDL.SL100.jpg
   - itemname: Swimsuit
     description: Yes, really! A fantastic way to stay warm in Iceland is in one of
       the many geothermal hot springs.
