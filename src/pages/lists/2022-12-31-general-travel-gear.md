@@ -23,17 +23,20 @@ listitems:
       wallet! You’ll need it to fill out Customs forms on international trips or
       write a postcard to a friend!
     link: https://www.amazon.com/Travel-Document-Organizer-Passport-Wristlet/dp/B07QKKFY3J/ref=sr_1_30?crid=1DA43O0NLUDGY&keywords=travel+wallet&qid=1641761128&refinements=p_72%3A2661618011&rnid=2661617011&sprefix=travel+wallet%2Caps%2C81&sr=8-30
+    image: https://m.media-amazon.com/images/I/51OK4FFSYWL.SL100.jpg
   - itemname: "Neck pillow "
     description: "I’m a fan of the Trtl style neck wrap since you can wrap it in any
       direction, and it’s small enough to toss into my tote bag in the airport.
       "
     link: https://www.amazon.com/Trtl-Pillow-Scientifically-Support-Washable/dp/B00LB7REFK/ref=sr_1_15?crid=2Q8UYA6TYBFQH&keywords=airplane+neck+pillow&qid=1641761278&sprefix=airplane+ne%2Caps%2C84&sr=8-15
+    image: https://m.media-amazon.com/images/I/41K4qPY0KEL.SL150.jpg
   - itemname: Scarf or shawl
     description: I’m typically cold in the airport and on the plane so I always have
       a pashmina wrap with me to use as a cover around my shoulders or even as a
       blanket. I usually take a neutral color that matches my outfits for my
       destination too!
     link: https://www.amazon.com/Achillea-Large-Pashmina-Colors-Champagne/dp/B01MXVQ0CL/ref=sr_1_6?crid=1RV3EOJBTG7I1&keywords=pashmina%2Bscarf&qid=1641762734&refinements=p_72%3A2661618011&rnid=2661617011&sprefix=pashm%2Caps%2C89&sr=8-6&th=1
+    image: https://m.media-amazon.com/images/I/41o0CsbBPkL.SL150.jpg
   - itemname: "Compression socks "
     description: Compression socks improve circulation and reduce leg swelling while
       traveling. If your socks are too tight and restricting, you probably have
@@ -46,12 +49,14 @@ listitems:
       wow, do they make a difference! Drown out the engine hum and noisy
       passengers!
     link: https://www.amazon.com/Apple-MWP22AM-A-AirPods-Pro/dp/B07ZPC9QD4/ref=sr_1_1_sspa?crid=1WAA2YH10PQ7T&keywords=airpods+pro&qid=1641763851&sprefix=airp%2Caps%2C78&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExSFAzWERYNllRQlFCJmVuY3J5cHRlZElkPUEwMTQwMTA0MktPT0o1NzlSOEhURiZlbmNyeXB0ZWRBZElkPUEwMDA1NDE0M1JFWVNXODNIVVpCMyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=
+    image: https://m.media-amazon.com/images/I/31gtbqaQ1nL.SL150.jpg
   - itemname: Portable power bank charger
     description: Portable power banks are just convenient when your batteries are
       running low on the go. We’ve charged phones, tablets, headlamps,
       headphones, and more with ours. It’s also helpful when there are limited
       outlets, and you need to charge multiple devices.
     link: https://www.amazon.com/Anker-Ultra-Compact-High-Speed-VoltageBoost-Technology/dp/B07QXV6N1B/ref=sr_1_4?crid=3JS01VV3B4D6U&keywords=portable%2Bcharger&qid=1641763891&sprefix=portable%2Bcharger%2Caps%2C80&sr=8-4&th=1
+    image: https://m.media-amazon.com/images/I/21wJc3mrFEL.SL150.jpg
 tags:
   - General
   - travel
