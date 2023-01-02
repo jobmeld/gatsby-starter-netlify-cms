@@ -26,13 +26,14 @@ export const ListPostTemplate = ({
   return (
     <section className="section">
       {helmet || ""}
+      {featuredimage ? (
+          <FullWidthImage img={fullWidthImage} title={title} subheading= "Packing List" />
+          ) : (<h1 class="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>) } 
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-          {featuredimage ? (
-          <FullWidthImage img={fullWidthImage} title={title} subheading= "Packing List" />
-          ) : (<h1 class="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>) } 
-            <p style={{ marginTop: `4rem` }}>{description}</p>
+          
+            <p style={{ marginTop: `2rem` }}>{description}</p>
             <PostContent content={content} />
             
             <div className="columns is-multiline">
