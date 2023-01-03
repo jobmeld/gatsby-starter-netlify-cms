@@ -28,7 +28,7 @@ export const ListPostTemplate = ({
 
     {featuredimage ? (
         <FullWidthImage img={fullWidthImage} title={title} subheading= "Packing List" />
-        ) : (<h1 class="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>) } 
+        ) : (<h1  style={{ textAlign: `center` }} class="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>) } 
 
     <section className="section">
       {helmet || ""} 
@@ -37,7 +37,7 @@ export const ListPostTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
           
-            <p style={{ marginTop: `2rem` }}>{description}</p>
+            <p>{description}</p>
             <PostContent content={content} />
             
             <div className="columns is-multiline">
