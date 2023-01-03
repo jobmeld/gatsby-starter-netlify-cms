@@ -24,68 +24,66 @@ export const ListPostTemplate = ({
   const fullWidthImage = getImage(featuredimage) || featuredimage;
 
   return (
-    <div>
+    <section className="section">
+      {helmet || ""} 
       {featuredimage ? (
-            <FullWidthImage img={fullWidthImage} title={title} subheading= "Packing List" />
-            ) : (<h1 class="title is-size-2 has-text-weight-bold is-bold-light" style="text-align:center">{title}</h1>) } 
-      <section className="section">
-        {helmet || ""}
-        <div className="container content">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
+          <FullWidthImage img={fullWidthImage} title={title} subheading= "Packing List" />
+          ) : (<h1 class="title is-size-2 has-text-weight-bold is-bold-light" style="text-align:center">{title}</h1>) } 
+      <div className="container content">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+          
+            <p style={{ marginTop: `2rem` }}>{description}</p>
+            <PostContent content={content} />
             
-              <p style={{ marginTop: `2rem` }}>{description}</p>
-              <PostContent content={content} />
-              
-              <div className="columns is-multiline">
-              {listitems &&
-                listitems.map((item) => (
-                  <div className="is-parent column is-6">
-                    <article
-                      className={`blog-list-item tile is-child box notification`}
-                    >
-                      <header>
-                        <h3>
-                        {item.link ? (
-                        <Link to={item.link}>{item.itemname}</Link>
-                        ) : item.itemname }  
-                        </h3>
+            <div className="columns is-multiline">
+            {listitems &&
+              listitems.map((item) => (
+                <div className="is-parent column is-6">
+                  <article
+                    className={`blog-list-item tile is-child box notification`}
+                  >
+                    <header>
+                      <h3>
+                      {item.link ? (
+                      <Link to={item.link}>{item.itemname}</Link>
+                      ) : item.itemname }  
+                      </h3>
 
-                      {item.image ? (
-                        <div className="featured-thumbnail">
-                          <PreviewCompatibleImage
-                            imageInfo={{
-                              image: item.image,
-                              alt: `featured image thumbnail for item ${item.itemname}`,
-                            }}
-                          />
-                        </div>
-                        ) : null}  
-                      </header>
-                      <PostContent content={item.description} />
-                      <div dangerouslySetInnerHTML={{ __html: item.html}} />
-                    </article>
-                  </div>
-                ))}
-            </div>
-              
-              {tags && tags.length ? (
-                <div style={{ marginTop: `4rem` }}>
-                  <h4>Tags</h4>
-                  <ul className="taglist">
-                    {tags.map((tag) => (
-                      <li key={tag + `tag`}>
-                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                      </li>
-                    ))}
-                  </ul>
+                    {item.image ? (
+                      <div className="featured-thumbnail">
+                        <PreviewCompatibleImage
+                          imageInfo={{
+                            image: item.image,
+                            alt: `featured image thumbnail for item ${item.itemname}`,
+                          }}
+                        />
+                      </div>
+                      ) : null}  
+                    </header>
+                    <PostContent content={item.description} />
+                    <div dangerouslySetInnerHTML={{ __html: item.html}} />
+                  </article>
                 </div>
-              ) : null}
-            </div>
+              ))}
+          </div>
+            
+            {tags && tags.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>Tags</h4>
+                <ul className="taglist">
+                  {tags.map((tag) => (
+                    <li key={tag + `tag`}>
+                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
